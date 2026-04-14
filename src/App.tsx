@@ -9,6 +9,7 @@ import Recruitment from "./pages/Recruitment";
 import Talents from "./pages/Talents";
 import Employees from "./pages/Employees";
 import Calendar from "./pages/Calendar";
+import Teste from "./pages/Teste";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/talentos" element={<Talents />} />
             <Route path="/colaboradores" element={<Employees />} />
             <Route path="/calendario" element={<Calendar />} />
+            <Route path="/teste" element={<Teste />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
