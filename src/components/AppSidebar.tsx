@@ -5,6 +5,7 @@ import {
   UserCheck,
   CalendarDays,
   Building2,
+  FlaskConical,
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
@@ -27,6 +28,7 @@ const menuItems = [
   { title: "Banco de Talentos", url: "/talentos", icon: Users },
   { title: "Colaboradores", url: "/colaboradores", icon: UserCheck },
   { title: "Calendário", url: "/calendario", icon: CalendarDays },
+  { title: "Teste", url: "/teste", icon: FlaskConical },
 ];
 
 export function AppSidebar() {
