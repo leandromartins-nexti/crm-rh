@@ -6,6 +6,7 @@ import {
   CalendarDays,
   Building2,
   FlaskConical,
+  GitBranch,
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
@@ -29,6 +30,7 @@ const menuItems = [
   { title: "Colaboradores", url: "/colaboradores", icon: UserCheck },
   { title: "Calendário", url: "/calendario", icon: CalendarDays },
   { title: "Teste", url: "/teste", icon: FlaskConical },
+  { title: "TesteGit", url: "/testegit", icon: GitBranch },
 ];
 
 export function AppSidebar() {
