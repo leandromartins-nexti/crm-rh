@@ -1,12 +1,12 @@
 # PLAYBOOK TÉCNICO - CRM RH
 
 ## Visão Geral da Arquitetura
-O CRM RH é um sistema desenvolvido como uma aplicação front-end utilizando React, com gerenciamento de estado, roteamento e estilização através de Tailwind CSS. A arquitetura é modular, permitindo a escalabilidade e manutenção do código. A aplicação é empacotada e servida utilizando o Vite, que proporciona um ambiente de desenvolvimento rápido e eficiente.
+O CRM RH é uma aplicação front-end desenvolvida em React, focada na gestão de recursos humanos. A arquitetura modular facilita a escalabilidade e manutenção do sistema. O projeto utiliza Vite para empacotamento e desenvolvimento, garantindo um ambiente rápido e eficiente. A estilização é feita com Tailwind CSS, permitindo uma abordagem utilitária e responsiva.
 
 ## Stack e Dependências
 - **Linguagens**: JavaScript/TypeScript
 - **Framework**: React
-- **Gerenciamento de Estado**: React Query
+- **Gerenciamento de Estado**: @tanstack/react-query
 - **Estilização**: Tailwind CSS
 - **Ferramentas de Construção**: Vite
 - **Testes**: Vitest, Playwright
@@ -14,10 +14,11 @@ O CRM RH é um sistema desenvolvido como uma aplicação front-end utilizando Re
 - **Linting**: ESLint
 
 ### Dependências Principais
-- `react` e `react-dom`: Bibliotecas fundamentais para construir a interface de usuário.
-- `@tanstack/react-query`: Para gerenciamento de dados e sincronização de estado com servidores.
-- `tailwindcss`: Framework CSS utilitário para estilização.
+- `react` e `react-dom`: Bibliotecas essenciais para a interface do usuário.
+- `@tanstack/react-query`: Para gerenciamento de estado e requisições assíncronas.
+- `tailwindcss`: Framework CSS para estilização.
 - `vitest`: Framework de testes para JavaScript/TypeScript.
+- `@radix-ui/react-*`: Componentes acessíveis e personalizáveis para React.
 
 ## Estrutura de Módulos (Mapa)
 ```
@@ -55,25 +56,25 @@ src/
 ```
 
 ## Modelo de Dados
-Os dados são gerenciados principalmente através de hooks e consultas com o React Query. O modelo de dados pode incluir entidades como:
+O modelo de dados é gerenciado através de hooks e consultas utilizando o React Query. As entidades principais incluem:
 - Funcionários
 - Recrutamento
 - Talentos
 - Calendário de eventos
 
-Os dados mockados estão disponíveis no arquivo `src/data/mockData.ts`, que serve como base para desenvolvimento e testes.
+Os dados mockados estão disponíveis no arquivo `src/data/mockData.ts`, que serve como base para o desenvolvimento e testes.
 
 ## Principais Endpoints/APIs
-Atualmente, não foi identificado código referente a endpoints específicos, pois a aplicação parece focar principalmente na interface do usuário e na interação com dados mockados. No entanto, a integração com uma API real pode ser realizada através do uso do React Query.
+Atualmente, não há implementação de endpoints específicos, já que a aplicação foca na interface do usuário e utiliza dados mockados. A integração com uma API real pode ser realizada utilizando o React Query para gerenciar as requisições.
 
 ## Convenções e Padrões
-- **Organização de Arquivos**: A estrutura de pastas é modular, com separação clara entre componentes, páginas, hooks e testes.
+- **Organização de Arquivos**: Estrutura modular com separação clara entre componentes, páginas, hooks e testes.
 - **Nomenclatura**: O padrão de nomenclatura segue o estilo camelCase para arquivos e funções.
-- **Componentização**: Os componentes são altamente reutilizáveis e seguem a abordagem funcional do React.
+- **Componentização**: Os componentes são reutilizáveis e seguem a abordagem funcional do React.
 
 ## Decisões Técnicas
-- **Uso do Vite**: A escolha do Vite como ferramenta de construção foi feita devido à sua velocidade e eficiência no desenvolvimento.
-- **React Query**: Optou-se por usar o React Query para gerenciar o estado e as requisições assíncronas, facilitando a sincronização de dados.
-- **Tailwind CSS**: A utilização do Tailwind permite uma estilização rápida e responsiva, reduzindo a necessidade de CSS personalizado.
+- **Uso do Vite**: Escolha do Vite pela sua rapidez e eficiência no desenvolvimento.
+- **React Query**: Optou-se por esta biblioteca para facilitar o gerenciamento de estado e a sincronização de dados.
+- **Tailwind CSS**: Utilização deste framework para estilização, permitindo um desenvolvimento rápido e responsivo.
 
-Este playbook técnico reflete o estado atual do código no commit `4ad165a1` e serve como um guia para desenvolvedores que desejam entender e contribuir para o projeto CRM RH.
+Este playbook técnico reflete o estado atual do código no commit `30149d6d` e serve como um guia para desenvolvedores que desejam compreender e contribuir para o projeto CRM RH.
